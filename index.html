@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css?family=Unica+One|Vollkorn" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+    <link rel="stylesheet" href="./main.css">
     <title>Matt Gifford | Portfolio</title>
 </head>
 <body>
@@ -11,115 +14,142 @@
 <header class="landing" role="banner">
     <div><img src="./assets/img/duckrabbit.svg" alt="duck rabbit illusion"></div>
     <h1>Matt Gifford</h1>
-    <ul>
-        <li>Front End Engineer</li>
-        <li>Api Builder</li>
-        <li>Third Item</li>
-    </ul>
+    <h3>web developer in Washington DC</h3>
+
+    <nav>
+        <ul>
+            <li><a href="#portfolio">Recent Projects</a></li>
+            <li><a href="">About</a></li>
+        </ul>
+    </nav>
+
+
     <ul class="links">
-        <li><a href="#">Contact</a></li>
-        <li><a href="#">GitHub</a></li>
-        <li><a href="#">Portfolio</a></li>
-        <li><a href="#">CV</a></li>
-        <li><a href="#">About</a></li>
+        <li><a href="mailto:mattgif@gmail.com"><i class="zmdi zmdi-email" aria-hidden="true" title="Email me"></i><span class="icon-hide">Contact</span></a></li>
+        <li><a href="http://github.com/mattgif"><i class="zmdi zmdi-github" aria-hidden="true" title="Github"></i></a><span class="icon-hide">Github</span></li>
+        <li><a href="https://www.linkedin.com/in/matthew-gifford
+"><i class="zmdi zmdi-linkedin" aria-hidden="true" title="LinkedIn"></i><span class="icon-hide">LinkedIn</span></a></li>
     </ul>
 </header>
 <main id="portfolio">
-    <section>
-        <h2>sublitr</h2>
-        <h3>A streamlined submission manager.</h3>
-        <p>sublitr (sub - lit - er) makes it easy for publications to receive, review, and decide on submissions. It provides a streamlined interface that allows editors to view, comment on, and update the status of submissions from any device, with nothing to download.</p>
-        <p>Submitters get a unified way of tracking all of their submissions through the review process.</p>
-        <dl>
-            <dd><a href="https://www.sublitr.com">Site</a></dd>
-            <dt><a href="https://www.sublitr.com">sublitr.com</a></dt>
-            <dd><a href="https://github.com/mattgif/sublitr">GitHub Repo</a></dd>
-            <dt><a href="https://github.com/mattgif/sublitr">github.com/mattgif/sublitr</a></dt>
-        </dl>
-        <div>PLACEHOLDER FOR IMAGE</div>
-        <h3>Technology</h3>
-        <h4>Front end</h4>
-        <ul>
-            <li>React / redux</li>
-            <li>HTML, CSS, javascript</li>
-            <li>Webpack</li>
-            <li>Travis Continuous Integration</li>
-            <li>Mocha/chai</li>
-        </ul>
-        <h4>API</h4>
-        <ul>
-            <li>Node js</li>
-            <li>MongoDB / mongoose</li>
-            <li>javascript</li>
-            <li>Travis CI</li>
-            <li>Amazon s3 API</li>
-        </ul>
+    <h2>Portfolio</h2>
+    <section id="sublitr" class="site-description">
+        <div class="preview"><a href="https://www.sublitr.com"><img src="./assets/img/sublitr-preview-image.png" alt="sublitr website on phone, desktop, and tablet" /></a></div>
+        <div class="site-content">
+            <section>
+                <h2>sublitr</h2>
+                <h3 class="site-subtitle">A streamlined submission manager</h3>
+                <p>sublitr (sub &bull; lit &bull; er) makes it easy to receive, review, and decide on submissions. View, track, and comment on submissions from any device, with nothing to download.</p>
+                <ul class="demo-github">
+                    <li class="demo"><a href="https://www.sublitr.com">Demo</a></li>
+                    <li class="github"><a href="https://github.com/mattgif/sublitr">Github</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Technology</h3>
+                <h4 class="tech-label">Front end</h4>
+                <ul class="tech">
+                    <li>React</li>
+                    <li>Redux</li>
+                    <li>Webpack</li>
+                    <li>Travis CI</li>
+                    <li>Mocha/Chai</li>
+                    <li>Javascript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                </ul>
+                <h4 class="tech-label">API</h4>
+                <ul class="tech">
+                    <li>Node.js</li>
+                    <li>MongoDB / Mongoose</li>
+                    <li>Travis CI</li>
+                    <li>Amazon s3 API</li>
+                    <li>javascript</li>
+                </ul>
+            </section>
+        </div>
     </section>
-    <section>
-        <h2>ply</h2>
-        <h3>share and rent your extra space</h3>
-        <p>ply is like an AirBnB for work space. It connects people who have spare space with artists who need a studio, amateur mechanics who need a space out of the rain, photographers looking for new shooting locations, and anyone else who needs a space to get stuff done.</p>
-        <dl>
-            <dt><a href="http://plyspace.herokuapps.com">Site</a></dt>
-            <dd><a href="http://plyspace.herokuapps.com">plyspace.herokuapp.com</a></dd>
-            <dt><a href="http://github.com/mattgif/ply">GitHub Repo</a></dt>
-            <dd><a href="http://github.com/mattgif/ply">github.com/mattgif/ply</a></dd>
-        </dl>
-        <div>PLACEHOLDER FOR IMAGE</div>
-        <h3>Technology</h3>
-        <h4>API</h4>
-        <ul>
-            <li>Node js</li>
-            <li>MongoDB / mongoose</li>
-        </ul>
-        <h4>Front end</h4>
-        <ul>
-            <li>jQuery, javascript, HTML</li>
-            <li>EJS / ember js</li>
-            <li>Google places API</li>
-        </ul>
+    <section id="ply" class="site-description">
+        <div class="preview"><img src="./assets/img/ply-preview-image.png" alt="ply website on desktop and mobile devices"/></div>
+        <div class="site-content">
+            <section>
+                <h2>ply</h2>
+                <h3 class="site-subtitle">Rent extra space</h3>
+                <p>ply is like AirBnB for work space. It connects people who have spare space with artists who need a studio, amateur mechanics who need a space out of the rain, photographers looking for new shooting locations, and anyone else who needs a space to get stuff done.</p>
+                <ul class="demo-github">
+                    <li class="demo"><a href="http://plyspace.herokuapps.com">Demo</a></li>
+                    <li class="github"><a href="http://github.com/mattgif/ply">Github</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Technology</h3>
+                <h4 class="tech-label">API</h4>
+                <ul class="tech">
+                    <li>Node js</li>
+                    <li>MongoDB / mongoose</li>
+                </ul>
+                <h4 class="tech-label">Front end</h4>
+                <ul class="tech">
+                    <li>jQuery, javascript, HTML</li>
+                    <li>EJS / ember js</li>
+                    <li>Google places API</li>
+                </ul>
+            </section>
+        </div>
     </section>
-    <section>
-        <h2>MovieCollab</h2>
-        <h3>A new way to lookup film data</h3>
-        <p>Can't remember an actors' name, but know she's been in ___ and ___? Or want to know what movies ___ and ___ have worked on together? MovieCollab uses data from tMDB to search for multiple actors / movies and find the movies/actors they have in common.</p>
-        <dl>
-            <dt><a href="#">Site</a></dt>
-            <dd><a href="#">moviecollab.com</a></dd>
-            <dt><a href="#">GitHub Repo</a></dt>
-            <dd><a href="#">github.com/mattgif/moviecollab</a></dd>
-        </dl>
-        <div>PLACHOLDER FOR IMAGE</div>
-        <h3>Technology</h3>
-        <h4>API</h4>
-        <ul>
-            <li>Django</li>
-            <li>Python</li>
-        </ul>
-        <h4>Front end</h4>
-        <ul>
-            <li>jQuery</li>
-            <li>HTML, CSS, javascript</li>
-        </ul>
+    <section id="moviecollab" class="site-description">
+        <div class="preview"><img src="./assets/img/movie-collab-preview-image.png" alt="moviecollab website on mobile devices and desktop"/></div>
+        <div class="site-content">
+            <section>
+                <h2>MovieCollab</h2>
+                <h3 class="site-subtitle">A new way to look up film data</h3>
+                <p>MovieCollab makes it easy to find who has collaborated on movies and tv shows, using data from tMDB to search for multiple actors / movies and find the movies / actors they have in common.</p>
+                <ul class="demo-github">
+                    <li class="demo"><a href="http://moviecollab.com">Demo</a></li>
+                    <li class="github"><a href="http://github.com/mattgif/moviecollab">Github</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Technology</h3>
+                <h4 class="tech-label">API</h4>
+                <ul class="tech">
+                    <li>Django</li>
+                    <li>Python</li>
+                </ul>
+                <h4 class="tech-label">Front end</h4>
+                <ul class="tech">
+                    <li>jQuery</li>
+                    <li>HTML, CSS, javascript</li>
+                </ul>
+            </section>
+        </div>
     </section>
-    <section>
-        <h2>polifluence</h2>
-        <h3>Trace the special interests behind legislation.</h3>
-        <p>Combining legislative information from ProPublica, and special interest data from the Sunlight project, polifluence provides summaries of bills and charts showing the special interests supporting and opposing it.</p>
-        <dl>
-            <dt><a href="#">Site</a></dt>
-            <dd><a href="#">_____</a></dd>
-            <dt><a href="#">GitHub repo</a></dt>
-            <dd><a href="#">____</a></dd>
-        </dl>
-        <div>PLACEHOLDER FOR IMAGE</div>
-        <h3>Technology</h3>
-        <ul>
-            <li>jQuery</li>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>javascript</li>
-        </ul>
+    <section id="polifluence" class="site-description">
+        <div class="preview"><img src="./assets/img/polifluence-preview-image.png" alt="polifluence website on mobile devices and desktop"/></div>
+        <div class="site-content">
+            <section>
+                <h2>polifluence</h2>
+                <h3 class="site-subtitle">Trace the special interests behind legislation.</h3>
+                <p>Combining legislative information from ProPublica, and special interest data from the Sunlight project, polifluence provides summaries of bills and charts showing the special interests supporting and opposing it.</p>
+                <ul class="demo-github">
+                    <li class="demo"><a href="https://mattgif.github.io/polifluence/">Demo</a></li>
+                    <li class="github"><a href="https://github.com/mattgif/polifluence">Github</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h3>Technology</h3>
+                <ul class="tech">
+                    <li>jQuery</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>javascript</li>
+                </ul>
+            </section>
+        </div>
     </section>
 </main>
 

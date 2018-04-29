@@ -1,0 +1,343 @@
+:root {
+    --site-red: #c31;
+    --site-gray: rgb(158, 158, 160);
+    --site-title-font: 'Unica One', cursive;
+    --site-body-font: 'Vollkorn', serif;
+    --faint-gray: rgba(0, 0, 0, 0.2);
+    --sublitr-color: #9468ae;
+    --sublitr-color-dark: #4f3566;
+    --ply-color: #ff6347;
+    --ply-color-dark: #ad3f2d;
+    --moviecollab-color: rgb(96, 193, 125);
+    --moviecollab-color-dark: rgb(66, 131, 80);
+    --polifluence-color: #21409a;
+    --polifluence-color-dark: #192d59;
+
+}
+
+body {
+    font-family: var(--site-body-font);
+    color: #333;
+    line-height: 1.4rem;
+    margin: 0;
+    padding: 0;
+}
+
+a, a:visited {
+    text-decoration: none;
+    color: #333;
+}
+
+header.landing {
+    padding: 40px 40px 10px;
+    text-align: right;
+    border-bottom: 1px solid var(--faint-gray);
+    width: 100vw;
+    max-width: 925px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header.landing > div {
+    height: 2rem;
+    display: inline-block;
+}
+
+header.landing > div img {
+    height: 100%;
+}
+
+header.landing h1 {
+    font-family: var(--site-title-font);
+    color: var(--site-red);
+    text-transform: uppercase;
+    display: inline-block;
+    font-weight: normal;
+    margin-bottom: 15px;
+}
+
+header.landing h3 {
+    margin-top: 0;
+    margin-bottom: 35px;
+    font-weight: normal;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    display: inline-block;
+}
+
+header nav {
+    margin-bottom: 75px;
+}
+
+header nav ul li {
+    margin-left: 30px;
+    padding-bottom: .5rem;
+}
+
+header nav ul li:first-child {
+    border-bottom: 2px solid var(--site-red);
+}
+
+header nav ul li:last-child {
+    border-bottom: 2px solid var(--site-gray);
+}
+
+.icon-hide {
+    overflow: hidden;
+    position: absolute;
+    height: 1px;
+    width: 1px;
+}
+
+ul.links a {
+    font-size: 2rem;
+    color: #333;
+    transition: .15s ease-in;
+}
+
+ul.links a:visited {
+    color: #333
+}
+
+ul.links a:hover {
+    color: var(--site-red);
+}
+
+ul.links li {
+    margin-left: 20px;
+}
+
+main {
+    width: 100vw;
+    max-width: 925px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+main > h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: .5rem;
+    display: inline-block;
+    font-family: var(--site-title-font);
+    text-transform: uppercase;
+}
+
+#portfolio {
+    padding: 40px;
+}
+
+#portfolio div.preview {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#portfolio div.preview img {
+    width: 100%;
+}
+
+section.site-description {
+    margin-top: 40px;
+    margin-bottom: 65px;
+}
+
+section.site-description h3 {
+    padding-bottom: .75rem;
+}
+
+#polifluence h3.site-subtitle {
+    border-bottom: 2px solid var(--polifluence-color);
+}
+
+#ply h3.site-subtitle {
+    border-bottom: 2px solid var(--ply-color);
+}
+
+#sublitr h3.site-subtitle {
+    border-bottom: 2px solid var(--sublitr-color);
+}
+
+#moviecollab h3.site-subtitle {
+    border-bottom: 2px solid var(--moviecollab-color);
+}
+
+ul.demo-github {
+    text-align: center;
+    margin: 40px 0;
+}
+
+ul.demo-github li {
+    width: 95px;
+    height: 46px;
+    line-height: 46px;
+    margin: 15px;
+    border-radius: 3px;
+    transition: .25s ease-in;
+}
+
+ul.demo-github li a {
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-family: var(--site-title-font)
+}
+
+ul.demo-github .demo a {
+    color: #fff;
+}
+
+ul.tech {
+    margin-top: 4px;
+}
+
+ul.tech li {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+ul.tech li::after {
+    content: "\00B7";
+    padding: 0 5px;
+}
+
+ul.tech li:last-child::after {
+    content: "";
+}
+
+h4.tech-label {
+    margin-bottom: 4px;
+    font-size: 12px;
+    font-weight: normal;
+    color: var(--site-gray);
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+div.site-content {
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.site-content > section {
+    width: 100%;
+}
+
+@media screen and (min-width: 769px) {
+    div.site-content > section:first-child {
+        width: 60%;
+        margin-left: 0;
+        margin-right: 20px;
+    }
+
+    div.site-content > section:last-child {
+        width: 35%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+/*button colors*/
+/* sublitr */
+#sublitr ul.demo-github .demo {
+    background-color: var(--sublitr-color);
+}
+
+#sublitr ul.demo-github .demo:hover {
+    background-color: var(--sublitr-color-dark);
+}
+
+#sublitr ul.demo-github .github {
+    border: 1px solid var(--sublitr-color);
+}
+
+#sublitr ul.demo-github .github a {
+    color: var(--sublitr-color);
+}
+
+#sublitr ul.demo-github .github:hover {
+    border: 1px solid var(--sublitr-color-dark);
+}
+
+#sublitr ul.demo-github .github:hover a {
+    color: var(--sublitr-color-dark);
+}
+
+/* ply */
+#ply ul.demo-github .demo {
+    background-color: var(--ply-color);
+}
+
+#ply ul.demo-github .demo:hover {
+    background-color: var(--ply-color-dark);
+}
+
+#ply ul.demo-github .github {
+    border: 1px solid var(--ply-color);
+}
+
+#ply ul.demo-github .github a {
+    color: var(--ply-color);
+}
+
+#ply ul.demo-github .github:hover {
+    border: 1px solid var(--ply-color-dark);
+}
+
+#ply ul.demo-github .github:hover a {
+    color: var(--ply-color-dark);
+}
+
+/* moviecollab */
+#moviecollab ul.demo-github .demo {
+    background-color: var(--moviecollab-color);
+}
+
+#moviecollab ul.demo-github .demo:hover {
+    background-color: var(--moviecollab-color-dark);
+}
+
+#moviecollab ul.demo-github .github {
+    border: 1px solid var(--moviecollab-color);
+}
+
+#moviecollab ul.demo-github .github a {
+    color: var(--moviecollab-color);
+}
+
+#moviecollab ul.demo-github .github:hover {
+    border: 1px solid var(--moviecollab-color-dark);
+}
+
+#moviecollab ul.demo-github .github:hover a {
+    color: var(--moviecollab-color-dark);
+}
+
+/* polifluence */
+#polifluence ul.demo-github .demo {
+    background-color: var(--polifluence-color);
+}
+
+#polifluence ul.demo-github .demo:hover {
+    background-color: var(--polifluence-color-dark);
+}
+
+#polifluence ul.demo-github .github {
+    border: 1px solid var(--polifluence-color);
+}
+
+#polifluence ul.demo-github .github a {
+    color: var(--polifluence-color);
+}
+
+#polifluence ul.demo-github .github:hover {
+    border: 1px solid var(--polifluence-color-dark);
+}
+
+#polifluence ul.demo-github .github:hover a {
+    color: var(--polifluence-color-dark);
+}
