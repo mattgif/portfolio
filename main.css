@@ -115,14 +115,15 @@ main {
     max-width: 925px;
     margin-right: auto;
     position: absolute;
-    left: -110%;
+    height: 0;
+    left: -300%;
     padding: 40px;
     opacity: 0;
     z-index: 1;
-    -webkit-transition: opacity 1s;
-    -moz-transition: opacity 1s;
-    -o-transition: opacity 1s;
-    transition: 1s;
+    -webkit-transition: .25s;
+    -moz-transition: .25s;
+    -o-transition: .25s;
+    transition: .25s;
 }
 
 main > h2 {
@@ -156,6 +157,10 @@ section.site-description {
     margin-bottom: 65px;
     padding-bottom: 40px;
     border-bottom: 1px solid var(--faint-gray);
+}
+
+section.site-description:last-child {
+    margin-bottom: 0;
 }
 
 section.site-description h3 {
@@ -296,6 +301,10 @@ div.site-content > section {
     font-size: 18px;
 }
 
+#about {
+    border-bottom: 1px solid var(--faint-gray)
+}
+
 @media screen and (min-width: 769px) {
     div.site-content {
         justify-content: space-between;
@@ -314,7 +323,7 @@ div.site-content > section {
 footer {
     display: flex;
     justify-content: space-between;
-    padding: 40px;
+    padding: 10px 40px 40px 40px;
     margin-left: auto;
     margin-right: auto;
     max-width: 925px;
@@ -327,6 +336,18 @@ footer ul li {
 footer a:hover {
     color: var(--site-red);
     transition: color .15s ease-in;
+}
+
+@media screen and (max-width: 550px) {
+    footer {
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+    }
+
+    footer p {
+        order: 2
+    }
 }
 
 /*button colors*/
