@@ -11,15 +11,23 @@
 </head>
 <body>
 
-<header class="landing" role="banner">
+<nav id="navbar" >
+    <div><a href="#top"><img src="./assets/img/duckrabbit.svg" alt="duck rabbit illusion"><span class="text">MG</span></a></div>
+    <ul>
+        <li><a href="https://www.linkedin.com/in/matthew-gifford"><i class="zmdi zmdi-linkedin" title="LinkedIn"></i></a></li>
+        <li><a href="http://github.com/mattgif"><i class="zmdi zmdi-github" title="Github"></i></a></li>
+        <li><a href="mailto:mattgif@gmail.com"><i class="zmdi zmdi-email" title="Email me"></i></a></li>
+    </ul>
+</nav>
+<header id="top" class="landing" role="banner">
     <div><img src="./assets/img/duckrabbit.svg" alt="duck rabbit illusion"></div>
     <h1>Matt Gifford</h1>
     <h3>web developer in Washington DC</h3>
 
     <nav>
         <ul>
-            <li><a href="#portfolio">Recent Projects</a></li>
-            <li><a href="">About</a></li>
+            <li class="active" ><a id="portfolio-link" href="#portfolio">Recent Projects</a></li>
+            <li><a id="about-link" href="#about">About</a></li>
         </ul>
     </nav>
 
@@ -48,6 +56,14 @@
 
             <section>
                 <h3>Technology</h3>
+                <h4 class="tech-label">API</h4>
+                <ul class="tech">
+                    <li>Node.js</li>
+                    <li>Mongo DB / Mongoose</li>
+                    <li>Travis CI</li>
+                    <li>Amazon s3 API</li>
+                    <li>javascript</li>
+                </ul>
                 <h4 class="tech-label">Front end</h4>
                 <ul class="tech">
                     <li>React</li>
@@ -58,14 +74,6 @@
                     <li>Javascript</li>
                     <li>HTML</li>
                     <li>CSS</li>
-                </ul>
-                <h4 class="tech-label">API</h4>
-                <ul class="tech">
-                    <li>Node.js</li>
-                    <li>MongoDB / Mongoose</li>
-                    <li>Travis CI</li>
-                    <li>Amazon s3 API</li>
-                    <li>javascript</li>
                 </ul>
             </section>
         </div>
@@ -87,14 +95,16 @@
                 <h3>Technology</h3>
                 <h4 class="tech-label">API</h4>
                 <ul class="tech">
-                    <li>Node js</li>
+                    <li>Node.js</li>
                     <li>MongoDB / mongoose</li>
                 </ul>
                 <h4 class="tech-label">Front end</h4>
                 <ul class="tech">
-                    <li>jQuery, javascript, HTML</li>
+                    <li>jQuery</li>
                     <li>EJS / ember js</li>
-                    <li>Google places API</li>
+                    <li>Javascript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
                 </ul>
             </section>
         </div>
@@ -105,7 +115,7 @@
             <section>
                 <h2>MovieCollab</h2>
                 <h3 class="site-subtitle">A new way to look up film data</h3>
-                <p>MovieCollab makes it easy to find who has collaborated on movies and tv shows, using data from tMDB to search for multiple actors / movies and find the movies / actors they have in common.</p>
+                <p>MovieCollab makes it easy to discover who has collaborated on movies and tv shows, using data from TMDb's API to search for multiple actors / movies and find the movies / actors they have in common.</p>
                 <ul class="demo-github">
                     <li class="demo"><a href="http://moviecollab.com">Demo</a></li>
                     <li class="github"><a href="http://github.com/mattgif/moviecollab">Github</a></li>
@@ -122,7 +132,9 @@
                 <h4 class="tech-label">Front end</h4>
                 <ul class="tech">
                     <li>jQuery</li>
-                    <li>HTML, CSS, javascript</li>
+                    <li>Javascript</li>
+                    <li>HTML</li>
+                    <li>CSS</li>
                 </ul>
             </section>
         </div>
@@ -133,7 +145,7 @@
             <section>
                 <h2>polifluence</h2>
                 <h3 class="site-subtitle">Trace the special interests behind legislation.</h3>
-                <p>Combining legislative information from ProPublica, and special interest data from the Sunlight project, polifluence provides summaries of bills and charts showing the special interests supporting and opposing it.</p>
+                <p>Combining legislative information from ProPublica's API, and special interest data from the Sunlight project's API, polifluence provides summaries of bills and charts showing the special interests supporting and opposing it.</p>
                 <ul class="demo-github">
                     <li class="demo"><a href="https://mattgif.github.io/polifluence/">Demo</a></li>
                     <li class="github"><a href="https://github.com/mattgif/polifluence">Github</a></li>
@@ -147,12 +159,23 @@
                     <li>HTML</li>
                     <li>CSS</li>
                     <li>javascript</li>
+                    <li>Handlebars</li>
+                    <li>Maplight API</li>
+                    <li>ProPublica API</li>
                 </ul>
             </section>
         </div>
     </section>
 </main>
+<main id="about" class="hidden">
+    <h2>About</h2>
+    <p>I am a web developer, working primarily in the Javascript stack. I've written APIs in Node.js and Python/Django, and front-end clients using React, jQuery, and pure Javscript.</p>
+    <p>After getting a PhD in philosophy, I picked up Python as&mdash;I thought&mdash;a way of saving myself some time. What started as a project to simply reorganize a chaotic file-naming system turned into passion. Conceptualizing a problem and breaking it into ever smaller puzzles until you find one you know how to solve: that's the analytical approach I'd honed as a philosopher. But here you get to build something and see the results play out on the screen in front of you. So, I learned and a I built, and just kept learning and building.</p>
+    <p>Since that time trying to save myself an hour's work, I've poured countless more hours into discovering new ways to create tools that other people might actually find useful&mdash;might even <em>enjoy</em> using. I haven't stopped enjoying the challenges, and pushing myself to learn and grow as a developer.</p>
+    <p>When I'm not puzzling through code, I enjoy tactical games (X-Com, e.g.), bicycling, and talking philosophy.</p>
+    <p>If you want to get in touch, you can reach me at <a href="mailto:mattgif@gmail.com">mattgif@gmail.com</a></p>
+</main>
 
-
+<script src="./main.js"></script>
 </body>
 </html>
