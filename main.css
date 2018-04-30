@@ -311,6 +311,24 @@ div.site-content > section {
     }
 }
 
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 925px;
+}
+
+footer ul li {
+    margin-left: 15px;
+}
+
+footer a:hover {
+    color: var(--site-red);
+    transition: color .15s ease-in;
+}
+
 /*button colors*/
 /* sublitr */
 #sublitr ul.demo-github .demo {
