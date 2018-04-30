@@ -7,21 +7,21 @@ const portfolioSection = document.getElementById('portfolio');
 const navbar = document.getElementById('navbar');
 
 function handleAboutClick (e) {
-    e.preventDefault();
+    if (e) {
+        e.preventDefault();
+    }
     aboutLink.parentNode.classList.add('active');
     portfolioLink.parentNode.classList.remove('active');
-    portfolioSection.classList.add('hidden');
-    aboutSection.classList.remove('hidden');
-    window.location.assign('#about');
+    portfolioSection.classList.remove('visible');
+    aboutSection.classList.add('visible');
 }
 
 function handlePortfolioClick (e) {
     e.preventDefault();
     portfolioLink.parentNode.classList.add('active');
     aboutLink.parentNode.classList.remove('active');
-    aboutSection.classList.add('hidden');
-    portfolioSection.classList.remove('hidden');
-    window.location.assign('#portfolio');
+    aboutSection.classList.remove('visible');
+    portfolioSection.classList.add('visible');
 }
 
 function showNavbarOnscroll() {
@@ -33,6 +33,14 @@ function showNavbarOnscroll() {
     }
 }
 
+function goToRequestedSection() {
+    // check to see if window navigated directly to #about
+    if (window.location.href.substr(window.location.href.lastIndexOf('#') + 1) === 'about') {
+        handleAboutClick()
+    }
+}
+
+window.addEventListener("load", goToRequestedSection);
 window.onscroll=function(){showNavbarOnscroll()};
 portfolioLink.addEventListener('click', handlePortfolioClick, false);
 aboutLink.addEventListener('click', handleAboutClick, false);

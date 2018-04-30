@@ -111,13 +111,18 @@ ul.links a:hover {
 ul.links li {
     margin-left: 20px;
 }
-
 main {
-    padding: 40px;
     max-width: 925px;
-    margin-left: auto;
     margin-right: auto;
-    transition: display .25s ease-in-out;
+    position: absolute;
+    left: -110%;
+    padding: 40px;
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: opacity 1s;
+    -moz-transition: opacity 1s;
+    -o-transition: opacity 1s;
+    transition: 1s;
 }
 
 main > h2 {
@@ -128,6 +133,15 @@ main > h2 {
     text-transform: uppercase;
 }
 
+main.visible {
+    height: auto;
+    margin-left: auto;
+    position: relative;
+    left: 0;
+    opacity: 1;
+    z-index: 2;
+}
+
 #portfolio div.preview {
     box-sizing: border-box;
     width: 100%;
@@ -135,10 +149,6 @@ main > h2 {
 
 #portfolio div.preview img {
     width: 100%;
-}
-
-.hidden {
-    display: none!important;
 }
 
 section.site-description {
