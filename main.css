@@ -12,7 +12,7 @@
     --moviecollab-color-dark: rgb(66, 131, 80);
     --polifluence-color: #21409a;
     --polifluence-color-dark: #192d59;
-
+    --navbar-height: 44px;
 }
 
 body {
@@ -32,7 +32,6 @@ header.landing {
     padding: 40px 40px 10px;
     text-align: right;
     border-bottom: 1px solid var(--faint-gray);
-    width: 100vw;
     max-width: 925px;
     margin-left: auto;
     margin-right: auto;
@@ -80,11 +79,11 @@ header nav ul li {
     padding-bottom: .5rem;
 }
 
-header nav ul li:first-child {
+header nav ul li.active {
     border-bottom: 2px solid var(--site-red);
 }
 
-header nav ul li:last-child {
+header nav ul li {
     border-bottom: 2px solid var(--site-gray);
 }
 
@@ -114,10 +113,11 @@ ul.links li {
 }
 
 main {
-    width: 100vw;
+    padding: 40px;
     max-width: 925px;
     margin-left: auto;
     margin-right: auto;
+    transition: display .25s ease-in-out;
 }
 
 main > h2 {
@@ -126,10 +126,6 @@ main > h2 {
     display: inline-block;
     font-family: var(--site-title-font);
     text-transform: uppercase;
-}
-
-#portfolio {
-    padding: 40px;
 }
 
 #portfolio div.preview {
@@ -141,9 +137,15 @@ main > h2 {
     width: 100%;
 }
 
+.hidden {
+    display: none!important;
+}
+
 section.site-description {
     margin-top: 40px;
     margin-bottom: 65px;
+    padding-bottom: 40px;
+    border-bottom: 1px solid var(--faint-gray);
 }
 
 section.site-description h3 {
@@ -225,6 +227,63 @@ div.site-content {
 
 div.site-content > section {
     width: 100%;
+}
+
+#navbar {
+    z-index: 999;
+    background-color: var(--site-red);
+    color: #fff;
+    height: var(--navbar-height);
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: -70px;
+    left: 0;
+    right: 0;
+    transition: .5s ease-in-out;
+}
+
+#navbar.floatingNav {
+    border-radius: 2px;
+    box-shadow: 0 1px 10px #999;
+    top: 0;
+}
+
+#navbar > div {
+    height: var(--navbar-height);
+    display: inline-block;
+}
+
+#navbar > div img {
+    height: 100%;
+}
+
+#navbar span.text {
+    font-family: var(--site-title-font);
+    height: var(--navbar-height);
+    line-height: var(--navbar-height);
+    background: transparent;
+    border: none;
+    color: #fff;
+    font-size: 30px;
+    margin: 0;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+}
+
+#navbar ul {
+    margin-left: auto;
+}
+
+#navbar a {
+    color: #fff;
+    line-height: var(--navbar-height);
+    font-family: var(--site-title-font);
+    text-transform: uppercase;
+    margin-left: 15px;
+    font-size: 18px;
 }
 
 @media screen and (min-width: 769px) {
