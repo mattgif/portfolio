@@ -7,6 +7,7 @@ const portfolioSection = document.getElementById('portfolio');
 const navbar = document.getElementById('navbar');
 
 function handleAboutClick (e) {
+    // makes about content visible / hides portfolio
     if (e) {
         e.preventDefault();
     }
@@ -17,6 +18,7 @@ function handleAboutClick (e) {
 }
 
 function handlePortfolioClick (e) {
+    // makes portfolio visible / hides bio
     e.preventDefault();
     portfolioLink.parentNode.classList.add('active');
     aboutLink.parentNode.classList.remove('active');
@@ -25,6 +27,7 @@ function handlePortfolioClick (e) {
 }
 
 function showNavbarOnscroll() {
+    // navbar hidden until main site banner covered
     const scrollBarPos = window.pageYOffset | document.body.scrollTop;
     if (scrollBarPos < 200) {
         navbar.classList.remove('floatingNav');

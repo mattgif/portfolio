@@ -297,10 +297,11 @@ div.site-content > section {
 }
 
 @media screen and (min-width: 769px) {
+    div.site-content {
+        justify-content: space-between;
+    }
     div.site-content > section:first-child {
         width: 60%;
-        margin-left: 0;
-        margin-right: 20px;
     }
 
     div.site-content > section:last-child {
