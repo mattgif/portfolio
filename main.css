@@ -124,6 +124,7 @@ main {
     -moz-transition: .25s;
     -o-transition: .25s;
     transition: .25s;
+    overflow: hidden;
 }
 
 main > h2 {
