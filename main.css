@@ -12,6 +12,8 @@
     --moviecollab-color-dark: rgb(66, 131, 80);
     --polifluence-color: #21409a;
     --polifluence-color-dark: #192d59;
+    --cvc-color: #20c997;
+    --cvc-color-dark: #333;
     --navbar-height: 44px;
 }
 
@@ -133,6 +135,7 @@ main > h2 {
     display: inline-block;
     font-family: var(--site-title-font);
     text-transform: uppercase;
+    font-weight: normal;
 }
 
 main.visible {
@@ -160,12 +163,17 @@ section.site-description {
     border-bottom: 1px solid var(--faint-gray);
 }
 
+section.site-description h2 {
+    font-weight: normal;
+}
+
 section.site-description:last-child {
     margin-bottom: 0;
 }
 
 section.site-description h3 {
     padding-bottom: .75rem;
+    font-weight: normal;
 }
 
 #polifluence h3.site-subtitle {
@@ -182,6 +190,10 @@ section.site-description h3 {
 
 #moviecollab h3.site-subtitle {
     border-bottom: 2px solid var(--moviecollab-color);
+}
+
+#cvc h3.site-subtitle {
+    border-bottom: 2px solid var(--cvc-color);
 }
 
 ul.demo-github {
@@ -450,4 +462,29 @@ footer a:hover {
 
 #polifluence ul.demo-github .github:hover a {
     color: var(--polifluence-color-dark);
+}
+
+/* cvc */
+#cvc ul.demo-github .demo {
+    background-color: var(--cvc-color);
+}
+
+#cvc ul.demo-github .demo:hover {
+    background-color: var(--cvc-color-dark);
+}
+
+#cvc ul.demo-github .github {
+    border: 1px solid var(--cvc-color);
+}
+
+#cvc ul.demo-github .github a {
+    color: var(--cvc-color);
+}
+
+#cvc ul.demo-github .github:hover {
+    border: 1px solid var(--cvc-color-dark);
+}
+
+#cvc ul.demo-github .github:hover a {
+    color: var(--cvc-color-dark);
 }
